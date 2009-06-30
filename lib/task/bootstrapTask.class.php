@@ -130,7 +130,7 @@ EOF;
   }
 
   /**
-   * runs additional symfony tasks as defined in bootstrap.yml run_sf_commands
+   * runs additional symfony tasks
    * --do=tasks
    */
   private function runAdditionalTasks(){
@@ -193,7 +193,7 @@ EOF;
   }
 
   /**
-   * replaces all sf tokens with their values in a string
+   * replaces all sf tokens with their values
    * @param <string> $string
    * @param <string> $delimiter
    * @return <string>
