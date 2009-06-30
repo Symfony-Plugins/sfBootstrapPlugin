@@ -15,6 +15,33 @@ Installation
   * copy the config file from plugin dir to project config dir
     and fit it to your needs (by default it only runs the cc task)
 
+  * an example configuration would look like `bootstrap.yml`
+
+        # install or upgrade plugins
+        plugins:
+          # add your pear channels as key
+          "pear.symfony-project.com":
+        #    - DbFinderPlugin
+        #    - sfSimpleBlogPlugin
+        #    - sfSwiftPlugin
+          "plugins.symfony-project.org":
+          # or add this for installing local stored plugins
+          "package":
+        #    - %SF_DATA_DIR%/src/sfMinifyPlugin-1.2.4.tgz
+
+        # run some tasks after handling plugins
+        tasks:
+        #  - propel:build-model
+        #  - propel:build-forms
+        #  - propel:build-filters
+        #  - propel:build-sql
+        #  - cc
+
+        # do some shell calls like symlinks, removes, etc.
+        shells:
+        #  - "mkdir %SF_DATA_DIR%/bootstraptest"
+        #  - "rm %SF_DATA_DIR%/bootstraptest"
+
 
 TODO
 ----
