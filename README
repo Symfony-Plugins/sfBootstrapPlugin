@@ -1,0 +1,22 @@
+sfBootstrap Plugin
+==============
+
+The `sfBootstrapPlugin` is a symfony plugin that provides a task to bootstrap
+an application with plugins,tasks and shell commands
+
+
+Installation
+------------
+
+  * Install the plugin
+
+        $ symfony plugin:install sfBootstrapPlugin
+
+  * copy the config file from plugin dir to project config dir
+    and fit it to your needs (by default it only runs the cc task)
+
+
+TODO
+----
+
+  * tests
